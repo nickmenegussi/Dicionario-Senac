@@ -1,0 +1,30 @@
+#botao1,#botao2,#botao3,#botao4,#botao5,#botao6,#botao7,#botao8,#botao9,#botao10 {
+    width: 20vw;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: 0;
+}
+
+.linha {
+    width: 60vw;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.circle {
+    align-items: center;
+    text-align: center;
+    height: 4.1vh;
+    width: 2vw;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+#conteudo{
+    visibility: visible;
+}
+#exampleModal{
+    background: rgb(98, 12, 112);
+    background: linear-gradient(189deg, rgba(98, 12, 112, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);/* ele bota alguma coisa diferente  */
+    backdrop-filter: blur(5px); /* da um desfoque  */
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="d-flex flex-column" style="margin-left: 10vh;">
+                <div class="row">
+                    <div class="col" style="margin-top: 19vh;">
+                        <h2 class="ms-3" style="margin-top: 5vh;">Palavras</h2>
+                        <div style="margin-left: 30vh;">
+                            <!-- Colocar onclick para cada botão para adicionar conteudos diferentes  -->
+                            <button type="button" id="botao1" class="btn btn-outline-secondary d-block mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 1')" >Lethologica</button>
+                            <button type="button" id="botao2" class="btn btn-outline-secondary d-block mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 2')">Quixotic</button>
+                            <button type="button" id="botao3" class="btn btn-outline-secondary d-block mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 3')">Discombobulate</button>
+                            <button type="button" id="botao4" class="btn btn-outline-secondary d-block mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 4')">Entrepreneur</button>
+                            <button type="button" id="botao5" class="btn btn-outline-secondary d-block mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 5')">Phenomenon</button>
+                            <!-- data-bs-target e  data-bs-toggle servem para ligar um elemento ao seu tipo-->
+                            <!-- onclick serve para  um evento de clique em um elemento. fazendo com ele chame a funcao openModal -->
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="col">
+                        <h2 class="mt-5" style="margin-left: 10vh;">Nicolas Menegussi Ramos</h2>
+                        <div class="" style="margin-top: 19vh; margin-left: 25vh;">
+                            <button type="button" id="botao6" class="btn btn-outline-secondary d-block mt-3"  data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 6')">Asthma</button>
+                            <button type="button" id="botao7" class="btn btn-outline-secondary d-block mt-3"  data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 7')">Bureaucracy</button>
+                            <button type="button" id="botao8" class="btn btn-outline-secondary d-block mt-3"  data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 8')">Synchronize</button>
+                            <button type="button" id="botao9" class="btn btn-outline-secondary d-block mt-3"  data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 9')">Schedule</button>
+                            <button type="button" id="botao10" class="btn btn-outline-secondary d-block mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="openModal('Conteudo 10')">Knowledge</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  data-backdrop="static"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="fs-5" id="NameEnglish">Word1</h2>
+                                        <svg id="PronunciaEnglish" xmlns="http://www.w3.org/2000/svg" width="65" height="46" viewBox="0 0 65 46" fill="none">
+                                            <path d="M9.41323 0.0809935C3.57054 5.91253 0 13.9309 0 22.8402C0 31.7495 3.48939 40.0108 9.41323 45.8423L15.2559 40.0108C10.8739 35.6371 8.11486 29.5626 8.11486 22.7592C8.11486 16.0367 10.7928 10.2052 15.2559 5.83153L9.41323 0V0.0809935ZM55.5868 0.0809935L49.7441 5.91253C54.1261 10.2862 56.8851 16.1177 56.8851 22.8402C56.8851 29.5626 54.2072 35.6371 49.7441 40.0918L55.5868 45.9233C61.4295 40.0918 65 31.8304 65 22.9212C65 14.0119 61.5106 5.99352 55.5868 0.161987V0.0809935ZM21.0986 11.5011C18.1773 14.4168 16.3109 18.4665 16.3109 22.9212C16.3109 27.3758 18.1773 31.6685 21.0986 34.5842L26.6979 28.7527C25.2372 27.2948 24.4257 25.189 24.4257 22.9212C24.4257 20.6533 25.2372 18.8715 26.6979 17.3326L21.0986 11.5011ZM43.9014 11.5011L38.3021 17.3326C39.7628 18.7905 40.5743 20.6533 40.5743 22.9212C40.5743 25.189 39.7628 27.2948 38.3021 28.7527L43.9014 34.5842C46.8227 31.6685 48.6891 27.3758 48.6891 22.9212C48.6891 18.4665 46.8227 14.4168 43.9014 11.5011Z" fill="black"/>
+                                        </svg>
+                                        
+                                </div>
+                                <p id="paragraphEnglish">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi maxime porro quidem corporis veritatis, itaque sit fuga asperiores illo maiores. Adipisci dignissimos quo quae ut iste aliquid ipsum aspernatur.</p>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <h2 class="fs-5" id="NomePortugues">Word1</h2>
+                                    <svg id="PronunciaPortuguese" xmlns="http://www.w3.org/2000/svg" width="65" height="46" viewBox="0 0 65 46" fill="none">
+                                        <path d="M9.41323 0.0809935C3.57054 5.91253 0 13.9309 0 22.8402C0 31.7495 3.48939 40.0108 9.41323 45.8423L15.2559 40.0108C10.8739 35.6371 8.11486 29.5626 8.11486 22.7592C8.11486 16.0367 10.7928 10.2052 15.2559 5.83153L9.41323 0V0.0809935ZM55.5868 0.0809935L49.7441 5.91253C54.1261 10.2862 56.8851 16.1177 56.8851 22.8402C56.8851 29.5626 54.2072 35.6371 49.7441 40.0918L55.5868 45.9233C61.4295 40.0918 65 31.8304 65 22.9212C65 14.0119 61.5106 5.99352 55.5868 0.161987V0.0809935ZM21.0986 11.5011C18.1773 14.4168 16.3109 18.4665 16.3109 22.9212C16.3109 27.3758 18.1773 31.6685 21.0986 34.5842L26.6979 28.7527C25.2372 27.2948 24.4257 25.189 24.4257 22.9212C24.4257 20.6533 25.2372 18.8715 26.6979 17.3326L21.0986 11.5011ZM43.9014 11.5011L38.3021 17.3326C39.7628 18.7905 40.5743 20.6533 40.5743 22.9212C40.5743 25.189 39.7628 27.2948 38.3021 28.7527L43.9014 34.5842C46.8227 31.6685 48.6891 27.3758 48.6891 22.9212C48.6891 18.4665 46.8227 14.4168 43.9014 11.5011Z" fill="black"/>
+                                    </svg>
+                                </div>                                
+                                <p id="paragraphPortugues">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis dolor error iure est expedita magni eaque cupiditate soluta! Et, dicta cum architecto dolorum eius voluptatibus quod voluptas nemo aspernatur officia!</p>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modalClose"  data-backdrop="static">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+       
+        <section class="d-flex flex-column mt-4" style="margin-left: 40vh;">
+            <p>Dialogo Conto Portugues - O Guitarrista</p>
+            <div>
+                <div class="d-flex" id="botao-div">
+                    <div>
+                        <hr class="linha">
+                    </div>
+                    <div>
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 40 28" fill="none">
+                                <path d="M34.4973 5.1003L22.326 20.8788C20.8886 22.7422 18.5469 22.7342 17.1222 20.8611L5.05867 5.00001" stroke="#292D32" stroke-width="10" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                       
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="d-flex flex-column justify-content-center mt-2 " id="conteudo" style="background-color:#D9D9D9;width: 60vw;border-radius: 20px;">
+                <div class="d-flex flex-column text-center mt-3" style="margin-left: 15vh; width:40vw;">
+                    <H1 id="NomePalavra">Title</H1>
+                    <p class="text-center" id="descritionWord">
+                        descrition
+                    </p>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
